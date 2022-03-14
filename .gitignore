@@ -1,0 +1,6 @@
+# en este documento se indican los archivos que se ignoran al momento de subir cambios un repositorio
+node_modules
+
+# varibles de entorno
+.env
+.env.dev
