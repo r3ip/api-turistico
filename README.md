@@ -9,7 +9,7 @@ npm install o npm i
 ```
 
 ## Preparar Variables de entorno local 🚀
-Crear un archivo .env en la raiz y colocar los siguientes datos
+Crear un archivo **.env** en la raiz y colocar los siguientes datos
 
 ```
 NODE_ENV=local
