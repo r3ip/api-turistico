@@ -4,13 +4,17 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT;
 
-const userRouter = require('./routes/usuario/usuario')
+const userRouter = require('./routes/usuario/usuario');
+const autenticacionRouter = require('./routes/autenticacion/autenticacion');
+const lugaresRouter = require('./routes/lugares/lugares');
+const puntosVisitaRouter = require('./routes/puntos-visita/puntosVisita');
+const puntoVisitaUsuarioRouter = require('./routes/punto-visita-usuario/puntoVisitaUsuario');
 
 // Middlewares
 app.use(express.json());
 
 //Rutas
-app.use(userRouter);
+app.use([userRouter,autenticacionRouter,lugaresRouter,puntoVisitaUsuarioRouter,puntosVisitaRouter]);
 
 app.get('/',(req, res) => {
 
