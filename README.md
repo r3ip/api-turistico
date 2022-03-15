@@ -1,6 +1,6 @@
 # Título del Proyecto
 
-_Acá va un párrafo que describa lo que es el proyecto_
+Acá va un párrafo que describa lo que es el proyecto
 
 ## Instalación de dependencias 🔧
 
@@ -8,8 +8,8 @@ _Acá va un párrafo que describa lo que es el proyecto_
 npm install o npm i
 ```
 
-## Variables de entorno🚀
-_Crear un archivo .env en la raiz y colocar los siguientes datos_
+## Preparar Variables de entorno local 🚀
+Crear un archivo .env en la raiz y colocar los siguientes datos
 
 ```
 NODE_ENV=local
@@ -22,16 +22,19 @@ DB_NAME=nombreDB
 DB_USER=usuarioDB
 DB_PASSWORD=contrasenaDB
 ```
+## Preparar DB local 🚀
+Pasos:
+- Crea un DB MySql my_db
+- Ejecuta el script (my_db.sql) se encuentra en la carpeta public
 
 ## Compilar proyecto en local 🚀
-
 ```
 npm run dev
 ```
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+Agrega notas adicionales sobre como hacer deploy
 
 
 ## Autores ✒️

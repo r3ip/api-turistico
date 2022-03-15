@@ -39,10 +39,6 @@ CREATE TABLE `lugares` (
   `status` tinyint DEFAULT 1
 );
 
-ALTER TABLE `puntos_visita_usuario` ADD FOREIGN KEY (`usuarioId`) REFERENCES `usuario` (`id`);
-
-ALTER TABLE `puntos_visita_usuario` ADD FOREIGN KEY (`puntoVisitaId`) REFERENCES `puntos_visita` (`id`);
-
 ALTER TABLE `puntos` ADD FOREIGN KEY (`puntoVisitaId`) REFERENCES `puntos_visita` (`id`);
 
 ALTER TABLE `puntos` ADD FOREIGN KEY (`lugaresId`) REFERENCES `lugares` (`id`);
